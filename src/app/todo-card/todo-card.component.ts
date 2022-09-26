@@ -12,7 +12,7 @@ interface Task {
 })
 export class TodoCardComponent implements OnInit, OnDestroy {
 
-  title = 'Mis Tareas 2';
+  title = 'TodoApp';
 
   tasks: Array<Task> = [];
 
@@ -22,8 +22,8 @@ export class TodoCardComponent implements OnInit, OnDestroy {
   }
 
   ngOnInit(): void {
-    this.tasks.push({ title: 'Comprar gomitas', done: false});
-    this.tasks.push({ title: 'Conseguir dinero para las gomitas', done: true});
+    this.tasks.push({ title: 'Tarea Realiza', done: false});
+    this.tasks.push({ title: 'Tarea por Realizarce', done: true});
 
   }
 
